@@ -33,5 +33,6 @@
     <modules>
         <module>1-loading-associations</module>
         <module>2-testcontainers</module>
+        <module>3-jpql</module>
     </modules>
 </project>
