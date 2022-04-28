@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.9.xsd">
+    <changeSet id="1" author="raoulvdberge">
+        <createTable tableName="posts">
+            <column name="id" type="int">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="title" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="content" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="2" author="raoulvdberge">
+        <createTable tableName="comments">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="post_id" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="content" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+        <addForeignKeyConstraint baseTableName="comments" baseColumnNames="post_id" constraintName="fk_comments_post"
+                                 referencedTableName="posts"
+                                 referencedColumnNames="id"/>
+    </changeSet>
+    <changeSet id="3" author="raoulvdberge">
+        <insert tableName="posts">
+            <column name="id">1</column>
+            <column name="title">My cat</column>
+            <column name="content">I love my cat!</column>
+        </insert>
+        <insert tableName="comments">
+            <column name="post_id">1</column>
+            <column name="content">I love your cat!</column>
+        </insert>
+        <insert tableName="comments">
+            <column name="post_id">1</column>
+            <column name="content">I hate cats.</column>
+        </insert>
+    </changeSet>
+    <changeSet id="4" author="raoulvdberge">
+        <createTable tableName="employees">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="name" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="manager" type="boolean">
+                <constraints nullable="false"/>
+            </column>
+            <column name="salary" type="int">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>
