@@ -20,7 +20,7 @@ class PostControllerIntegrationTest {
 
     @Test
     // ensure that my stuff is cleaned up!
-    // @Transactional
+    @Transactional
     void shouldBeAbleToRetrieveSummaryOfPost() throws Exception {
         // Act
         var result = mockMvc.perform(get("/post/1"));

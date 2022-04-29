@@ -20,16 +20,6 @@ class PostControllerIntegrationTest {
     @Test
     @Sql(scripts = "classpath:test-data.sql")
     void shouldBeAbleToRetrieveSummaryOfPost() throws Exception {
-        // Act
-        var result = mockMvc.perform(get("/post/1"));
 
-        // Assert
-        result
-            .andDo(print())
-            .andExpect(content().string("""
-                #1 - My cat
-                Comment #1 - I love your cat!
-                Comment #2 - I hate cats.
-                """));
     }
 }

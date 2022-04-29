@@ -18,9 +18,10 @@ public class EmployeeService {
     }
 
     private void tryGiveRaiseToManager(EmployeeJpaEntity employeeEntity) {
+        employeeEntity.setSalary(employeeEntity.getSalary() * 2);
         // Only managers get the raise...
         if (employeeEntity.isManager()) {
-            employeeEntity.setSalary(employeeEntity.getSalary() * 2);
+            repository.save(employeeEntity);
         }
     }
 }

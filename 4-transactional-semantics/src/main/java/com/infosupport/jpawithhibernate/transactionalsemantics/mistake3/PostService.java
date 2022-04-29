@@ -12,7 +12,6 @@ public class PostService {
         this.postRepository = postRepository;
     }
 
-    @Transactional
     public String getSummary(int postId) {
         StringBuilder builder = new StringBuilder();
 
