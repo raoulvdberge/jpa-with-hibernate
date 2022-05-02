@@ -55,10 +55,14 @@ class PostRepositoryIntegrationTest {
         assertThat(posts).hasSize(2);
 
         for (PostJpaEntity post : posts) {
+            int amountOfComments = post.getLazyComments().size();
+
+            assertThat(amountOfComments).isEqualTo(2);
+
             System.out.printf(
                 "Post %s has %d comments%n",
                 post.getTitle(),
-                post.getLazyComments().size()
+                amountOfComments
             );
         }
     }
