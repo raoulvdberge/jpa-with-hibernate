@@ -10,7 +10,7 @@ public class PostService11IntegrationTest {
     PostService11 sut;
 
     @Test
-    void shouldProxy() {
+    void demoUsageOfProxyToAvoidAdditionalDatabaseCall() {
         sut.addComment(1, "test");
     }
 }
