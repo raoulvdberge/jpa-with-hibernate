@@ -34,6 +34,6 @@
         <module>1-loading-associations</module>
         <module>2-testcontainers</module>
         <module>3-jpql</module>
-        <module>4-transactional-semantics</module>
+        <module>4-performance-tips</module>
     </modules>
 </project>
