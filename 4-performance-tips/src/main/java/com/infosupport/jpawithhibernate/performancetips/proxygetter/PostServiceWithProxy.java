@@ -16,7 +16,8 @@ public class PostServiceWithProxy {
     }
 
     public void addComment(int postId, String content) {
-        PostJpaEntity postReference = postRepository.getReferenceById(postId);
+        // TODO - Use reference instead to avoid extra query
+        PostJpaEntity postReference = postRepository.findById(postId).orElseThrow(); // TODO: Avoid the extra db call
         CommentJpaEntity comment = new CommentJpaEntity();
         comment.setPost(postReference);
         comment.setContent(content);

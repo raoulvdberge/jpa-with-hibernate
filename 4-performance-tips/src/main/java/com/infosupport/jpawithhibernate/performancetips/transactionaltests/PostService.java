@@ -2,8 +2,6 @@ package com.infosupport.jpawithhibernate.performancetips.transactionaltests;
 
 import org.springframework.stereotype.Service;
 
-import jakarta.transaction.Transactional;
-
 @Service
 public class PostService {
     private final PostRepository postRepository;
@@ -12,7 +10,6 @@ public class PostService {
         this.postRepository = postRepository;
     }
 
-    @Transactional
     public String getSummary(int postId) {
         StringBuilder builder = new StringBuilder();
 

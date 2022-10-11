@@ -14,10 +14,4 @@ public class PostController {
     public PostController(PostService postService) {
         this.postService = postService;
     }
-
-    @GetMapping("/{id}")
-    @ResponseBody
-    public String getSummary(@PathVariable("id") int id) {
-        return postService.getSummary(id);
-    }
 }

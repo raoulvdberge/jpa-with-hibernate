@@ -15,13 +15,6 @@ class PostRepositoryIntegrationTest {
     @Test
     @Sql("classpath:test-data.sql")
     void shouldBeAbleToRetrievePostProjection() {
-        // Act
-        PostProjection postProjection = postRepository.getPostProjection(1);
-
-        // Assert
-        assertThat(postProjection).usingRecursiveComparison().isEqualTo(new PostProjection(
-            "My cat",
-            "I love my cat!"
-        ));
+        // TODO
     }
 }

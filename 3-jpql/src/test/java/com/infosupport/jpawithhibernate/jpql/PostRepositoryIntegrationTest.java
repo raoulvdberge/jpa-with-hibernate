@@ -50,7 +50,7 @@ class PostRepositoryIntegrationTest {
     @Sql("classpath:test-data.sql")
     @DisplayName("Demo for fetch directive, as a solution for the N+1 query problem.")
     void demoFetchDirective() {
-        var posts = postRepository.findAllPostsWithTheirComments();
+        var posts = postRepository.findAll(); // TODO: Use the fetch directive.
 
         assertThat(posts).hasSize(2);
 
