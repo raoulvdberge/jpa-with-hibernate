@@ -16,7 +16,7 @@ public class PostServiceWithProxy {
     }
 
     public void addComment(int postId, String content) {
-        PostJpaEntity postReference = postRepository.getById(postId);
+        PostJpaEntity postReference = postRepository.getReferenceById(postId);
         CommentJpaEntity comment = new CommentJpaEntity();
         comment.setPost(postReference);
         comment.setContent(content);
