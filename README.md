@@ -1,8 +1,8 @@
-# JPA with Hibernate
+# JPA with Hibernate [![Build](https://github.com/raoulvdberge/jpa-with-hibernate/actions/workflows/build.yml/badge.svg)](https://github.com/raoulvdberge/jpa-with-hibernate/actions/workflows/build.yml)
 
 A presentation about using JPA with Hibernate. Mainly focused on transactions and JPQL.
 
-Given April 29th, 2022 and October 12th 2022 at KdG University College in Antwerp.
+Given April 29th, 2022, October 12th 2022 and April 15th 2023 at KdG University College in Antwerp.
 
 ## Branches
 
