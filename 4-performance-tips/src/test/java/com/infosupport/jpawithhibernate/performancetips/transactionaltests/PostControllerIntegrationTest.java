@@ -1,4 +1,4 @@
-package com.infosupport.jpawithhibernate.performancetips.tip3;
+package com.infosupport.jpawithhibernate.performancetips.transactionaltests;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,8 +17,7 @@ class PostControllerIntegrationTest {
     MockMvc mockMvc;
 
     @Test
-    // ensure that my stuff is cleaned up!
-    // @Transactional
+    // @Transactional // Ensure that my stuff is cleaned up! - Don't do this.
     void shouldBeAbleToRetrieveSummaryOfPost() throws Exception {
         // Act
         var result = mockMvc.perform(get("/post/1"));

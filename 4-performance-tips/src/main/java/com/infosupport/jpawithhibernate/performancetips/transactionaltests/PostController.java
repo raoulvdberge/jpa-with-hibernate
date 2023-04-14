@@ -1,4 +1,4 @@
-package com.infosupport.jpawithhibernate.performancetips.tip3;
+package com.infosupport.jpawithhibernate.performancetips.transactionaltests;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

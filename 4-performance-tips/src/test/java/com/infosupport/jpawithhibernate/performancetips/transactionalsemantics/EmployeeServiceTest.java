@@ -1,4 +1,4 @@
-package com.infosupport.jpawithhibernate.performancetips.tip9;
+package com.infosupport.jpawithhibernate.performancetips.transactionalsemantics;
 
 import org.assertj.core.api.recursive.comparison.RecursiveComparisonConfiguration;
 import org.junit.jupiter.api.Test;

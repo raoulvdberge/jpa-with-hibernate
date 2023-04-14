@@ -1,4 +1,4 @@
-package com.infosupport.jpawithhibernate.performancetips.tip3;
+package com.infosupport.jpawithhibernate.performancetips.transactionaltests;
 
 import javax.persistence.*;
 

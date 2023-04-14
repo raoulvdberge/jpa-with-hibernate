@@ -1,6 +1,6 @@
-package com.infosupport.jpawithhibernate.performancetips.tip11;
+package com.infosupport.jpawithhibernate.performancetips.proxygetter;
 
-import com.infosupport.jpawithhibernate.performancetips.tip3.CommentJpaEntity;
+import com.infosupport.jpawithhibernate.performancetips.transactionaltests.CommentJpaEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

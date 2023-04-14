@@ -1,4 +1,4 @@
-package com.infosupport.jpawithhibernate.performancetips.tip3;
+package com.infosupport.jpawithhibernate.performancetips.transactionaltests;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

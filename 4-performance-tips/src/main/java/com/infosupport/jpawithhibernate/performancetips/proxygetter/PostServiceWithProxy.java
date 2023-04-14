@@ -1,16 +1,16 @@
-package com.infosupport.jpawithhibernate.performancetips.tip11;
+package com.infosupport.jpawithhibernate.performancetips.proxygetter;
 
-import com.infosupport.jpawithhibernate.performancetips.tip3.CommentJpaEntity;
-import com.infosupport.jpawithhibernate.performancetips.tip3.PostJpaEntity;
-import com.infosupport.jpawithhibernate.performancetips.tip3.PostRepository;
+import com.infosupport.jpawithhibernate.performancetips.transactionaltests.CommentJpaEntity;
+import com.infosupport.jpawithhibernate.performancetips.transactionaltests.PostJpaEntity;
+import com.infosupport.jpawithhibernate.performancetips.transactionaltests.PostRepository;
 import org.springframework.stereotype.Service;
 
 @Service
-public class PostService11 {
+public class PostServiceWithProxy {
     private final PostRepository postRepository;
     private final CommentRepository commentRepository;
 
-    public PostService11(PostRepository postRepository, CommentRepository commentRepository) {
+    public PostServiceWithProxy(PostRepository postRepository, CommentRepository commentRepository) {
         this.postRepository = postRepository;
         this.commentRepository = commentRepository;
     }

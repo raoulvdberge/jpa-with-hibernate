@@ -1,13 +1,13 @@
-package com.infosupport.jpawithhibernate.performancetips.tip11;
+package com.infosupport.jpawithhibernate.performancetips.proxygetter;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-public class PostService11IntegrationTest {
+public class PostServiceWithProxyIntegrationTest {
     @Autowired
-    PostService11 sut;
+    PostServiceWithProxy sut;
 
     @Test
     void demoUsageOfProxyToAvoidAdditionalDatabaseCall() {
