@@ -2,6 +2,7 @@ package com.infosupport.jpawithhibernate.jpql;
 
 import jakarta.persistence.*;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Table(name = "posts")
@@ -19,6 +20,9 @@ public class PostJpaEntity {
 
     @OneToMany(mappedBy = "post", fetch = FetchType.LAZY)
     private List<CommentJpaEntity> lazyComments;
+
+    @OneToMany(mappedBy = "post", fetch = FetchType.LAZY)
+    private List<TagJpaEntity> tags;
 
     public int getId() {
         return id;
@@ -50,5 +54,13 @@ public class PostJpaEntity {
 
     public void setLazyComments(List<CommentJpaEntity> lazyComments) {
         this.lazyComments = lazyComments;
+    }
+
+    public List<TagJpaEntity> getTags() {
+        return tags;
+    }
+
+    public void setTags(List<TagJpaEntity> tags) {
+        this.tags = tags;
     }
 }

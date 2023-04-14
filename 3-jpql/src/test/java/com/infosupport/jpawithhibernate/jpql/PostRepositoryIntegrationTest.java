@@ -59,10 +59,13 @@ class PostRepositoryIntegrationTest {
 
             assertThat(amountOfComments).isEqualTo(2);
 
+            int amountOfTags = post.getTags().size();
+
             System.out.printf(
-                "Post %s has %d comments%n",
+                "Post %s has %d comments and %d tags%n",
                 post.getTitle(),
-                amountOfComments
+                amountOfComments,
+                amountOfTags
             );
         }
     }

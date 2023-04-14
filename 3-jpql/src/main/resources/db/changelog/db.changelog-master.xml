@@ -37,4 +37,20 @@
                                  referencedTableName="posts"
                                  referencedColumnNames="id"/>
     </changeSet>
+    <changeSet id="3" author="raoulvdberge">
+        <createTable tableName="tags">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="post_id" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="name" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+        <addForeignKeyConstraint baseTableName="tags" baseColumnNames="post_id" constraintName="fk_tags_post"
+                                 referencedTableName="posts"
+                                 referencedColumnNames="id"/>
+    </changeSet>
 </databaseChangeLog>
