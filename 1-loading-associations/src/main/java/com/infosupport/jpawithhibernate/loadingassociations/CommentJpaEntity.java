@@ -1,6 +1,6 @@
 package com.infosupport.jpawithhibernate.loadingassociations;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "comments")

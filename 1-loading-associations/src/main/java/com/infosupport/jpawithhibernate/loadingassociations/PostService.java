@@ -2,7 +2,7 @@ package com.infosupport.jpawithhibernate.loadingassociations;
 
 import org.springframework.stereotype.Service;
 
-import javax.transaction.Transactional;
+import jakarta.transaction.Transactional;
 
 @Service
 public class PostService {

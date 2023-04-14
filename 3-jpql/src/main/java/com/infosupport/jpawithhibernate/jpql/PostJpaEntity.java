@@ -1,6 +1,6 @@
 package com.infosupport.jpawithhibernate.jpql;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.util.List;
 
 @Entity

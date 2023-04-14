@@ -8,6 +8,6 @@ import java.util.List;
 
 @Repository
 public interface PostRepository extends JpaRepository<PostJpaEntity, Integer> {
-    @Query("SELECT DISTINCT p FROM PostJpaEntity p JOIN FETCH p.lazyComments")
-    List<PostJpaEntity> findAllDistinctPostsWithTheirComments();
+    @Query("SELECT p FROM PostJpaEntity p JOIN FETCH p.lazyComments")
+    List<PostJpaEntity> findAllPostsWithTheirComments();
 }

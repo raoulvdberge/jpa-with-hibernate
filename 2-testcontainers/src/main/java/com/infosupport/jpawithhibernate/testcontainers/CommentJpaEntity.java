@@ -1,6 +1,6 @@
 package com.infosupport.jpawithhibernate.testcontainers;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "comments")

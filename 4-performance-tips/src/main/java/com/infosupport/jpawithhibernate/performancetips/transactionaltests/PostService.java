@@ -2,7 +2,7 @@ package com.infosupport.jpawithhibernate.performancetips.transactionaltests;
 
 import org.springframework.stereotype.Service;
 
-import javax.transaction.Transactional;
+import jakarta.transaction.Transactional;
 
 @Service
 public class PostService {

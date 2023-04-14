@@ -1,6 +1,6 @@
 package com.infosupport.jpawithhibernate.performancetips.transactionalsemantics;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "employees")
