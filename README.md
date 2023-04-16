@@ -7,11 +7,11 @@ Given April 29th, 2022, October 12th 2022 and April 15th 2023 at KdG University 
 ## Branches
 
 - `solution`: the demos with all their solutions.
-- `demo`: the version used for the presentation, with some code removed.
+- `demo`: the version used as a baseline for the presentation, with some code removed.
 
 ## Slides
 
-See `slides.pdf`.
+See [slides.pdf](./slides.pdf).
 
 ## Running locally
 
