@@ -2,7 +2,12 @@
 
 A presentation about using JPA with Hibernate. Mainly focused on transactions and JPQL.
 
-Given April 29th, 2022, October 12th 2022 and April 17th 2023 at KdG University College in Antwerp.
+Presented on following dates at KdG University College in Antwerp:
+
+- April 29th, 2022
+- October 12th, 2022
+- April 17th, 2023
+- November 16th, 2023
 
 ## Branches
 
